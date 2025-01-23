@@ -1,3 +1,2 @@
-# Setting up a dev container for <Insert: Go or Rust depending on which you are doing>
-
+# Setting up a dev container for Rust
 * Primary author: [Hamsini Tankala](https://github.com/htankala)
