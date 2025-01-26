@@ -4,3 +4,5 @@ theme:
 
 markdown_extensions:
 - toc               # Table of contents
+- codehilite        # Syntax highlighting for code blocks
+- admonition 

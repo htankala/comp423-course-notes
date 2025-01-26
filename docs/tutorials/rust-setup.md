@@ -12,3 +12,8 @@ Example of Toc:
 ### Subsection 1.2
 
 ## Section 2
+
+```bash
+# Example shell command
+mkdir go-devcontainer-tutorial
+cd go-devcontainer-tutorial
