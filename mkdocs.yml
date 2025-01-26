@@ -3,6 +3,6 @@ theme:
   name: material 
 
 markdown_extensions:
-- toc               # Table of contents
+- toc 
 - codehilite        # Syntax highlighting for code blocks
 - admonition 

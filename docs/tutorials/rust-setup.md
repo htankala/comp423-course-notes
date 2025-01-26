@@ -13,7 +13,6 @@ Example of Toc:
 
 ## Section 2
 
-```bash
 # Example shell command
 mkdir go-devcontainer-tutorial
 cd go-devcontainer-tutorial
