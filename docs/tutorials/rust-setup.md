@@ -148,9 +148,9 @@ cargo build
 ```
 !!! note "The cargo build command is similar to using gcc in COMP211. It only compiles the code but won't run the code."
 
-###Step 2: To run the built file, use the following command from the [target folder](https://doc.rust-lang.org/cargo/commands/cargo-build.html#output-options), which will be present in the root project directory:
+###Step 2: To run the built file, use the following command from the [target/debug folder](https://doc.rust-lang.org/book/ch01-03-hello-cargo.html#building-and-running-a-cargo-project), which will be present in the root project directory:
 ```bash
-./hello_comp423_rust
+./target/debug/hello_comp423_rust
 ```
 To compile and run the program in one step, use the following command:
 ```bash
