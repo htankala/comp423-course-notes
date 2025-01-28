@@ -47,7 +47,6 @@ git commit -m "Initial commit with README"
 (2) Fill in the details as follows:
 
 * **Repository Name:** <mark>rust-tutorial</mark>
-* **Description:** "Course notes organized as a static website using Material for MkDocs."
 * **Visibility:** Public
 
 (3) Do not initialize the repository with a README, .gitignore, or license.
