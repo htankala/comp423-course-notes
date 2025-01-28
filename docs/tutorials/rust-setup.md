@@ -22,8 +22,8 @@ Before we dive in, make sure you have:
 (B) Create a new directory for your project. (Note: Of course, if you'd like to organize this tutorial somewhere else on your machine, go ahead and change into that parent directory first. By default this will be in your user's home directory.):
 
 ```bash
-mkdir comp423-course-notes
-cd comp423-course-notes
+mkdir rust_tutorial
+cd rust_tutorial 
 ```
 
 (C) Initialize a new Git repository:
@@ -94,7 +94,7 @@ Lets establish your static website development environment:
 
 ###Step 1. Add Development Container Configuration
 
-1. In VS Code, open the <mark>comp423-course-notes</mark> directory. You can do this via: File > Open Folder.
+1. In VS Code, open the <mark>rust_tutorial</mark> directory. You can do this via: File > Open Folder.
 2. Install the **Dev Containers** extension for VS Code.
 3. Create a <mark>.devcontainer</mark> directory in the root of your project with the following file inside of this "hidden" configuration directory:
 
