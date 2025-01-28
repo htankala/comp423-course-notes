@@ -22,8 +22,13 @@ Before we dive in, make sure you have:
 (B) Create a new directory for your project. (Note: Of course, if you'd like to organize this tutorial somewhere else on your machine, go ahead and change into that parent directory first. By default this will be in your user's home directory.):
 
 ```bash
+<<<<<<< HEAD
 mkdir rust-tutorial
 cd rust-tutorial
+=======
+mkdir rust_tutorial
+cd rust_tutorial 
+>>>>>>> mkdocs-extensions
 ```
 
 (C) Initialize a new Git repository:
@@ -46,7 +51,11 @@ git commit -m "Initial commit with README"
 
 (2) Fill in the details as follows:
 
+<<<<<<< HEAD
 * **Repository Name:** <mark>rust-tutorial</mark>
+=======
+* **Repository Name:** <mark>comp423-course-notes</mark>
+>>>>>>> mkdocs-extensions
 * **Description:** "Course notes organized as a static website using Material for MkDocs."
 * **Visibility:** Public
 
@@ -59,7 +68,11 @@ git commit -m "Initial commit with README"
 (1) Add the GitHub repository as a remote:
 
 ```bash
+<<<<<<< HEAD
 git remote add origin https://github.com/<your-username>/rust-tutorial.git
+=======
+git remote add origin https://github.com/<your-username>/comp423-course-notes.git
+>>>>>>> mkdocs-extensions
 ```
 Replace <mark>your-username</mark> with your GitHub username.
 
@@ -88,13 +101,21 @@ In this project, our primary dependency is <mark>mkdocs-material</mark>, which e
 
 To ensure your dependencies are always correctly installed and available, in standard Python projects relying on <mark>pip</mark>, requirements are traditionally listed out in a <mark>requirements.txt</mark> file in the project's root directory. This file is committed to your project's version control history so that as your project adds or updates dependencies, it is reflected in the project's history. This allows anyone working on the project to quickly set up their environment by installing the necessary dependencies with the <mark>pip install</mark> command. The dev container configuration you setup will automatically install dependencies from <mark>requirements.txt</mark> when the container is created. This allows anyone working on the project to have a complete environment setup in one step: starting a dev container.
 
+<<<<<<< HEAD
 In summary, the <mark>devcontainer.json</mark> file specifies configuration for a consistent development environment using a Docker image. The <mark>requirements.txt</mark> file ensures all needed Python package for our project are installed when the container is created. Together, these files automate the process of setting up a developer environment, making it easier for you and others to work on the project.
+=======
+In summary, the the <mark>devcontainer.json</mark> file specifies configuration for a consistent development environment using a Docker image. The <mark>requirements.txt</mark> file ensures all needed Python package for our project are installed when the container is created. Together, these files automate the process of setting up a developer environment, making it easier for you and others to work on the project.
+>>>>>>> mkdocs-extensions
 
 Lets establish your static website development environment:
 
 ###Step 1. Add Development Container Configuration
 
+<<<<<<< HEAD
 1. In VS Code, open the <mark>rust-tutorial</mark> directory. You can do this via: File > Open Folder.
+=======
+1. In VS Code, open the <mark>rust_tutorial</mark> directory. You can do this via: File > Open Folder.
+>>>>>>> mkdocs-extensions
 2. Install the **Dev Containers** extension for VS Code.
 3. Create a <mark>.devcontainer</mark> directory in the root of your project with the following file inside of this "hidden" configuration directory:
 
