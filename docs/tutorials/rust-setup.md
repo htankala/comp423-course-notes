@@ -41,6 +41,39 @@ echo "# Rust Tutorial" > README.md
 git add README.md
 git commit -m "Initial commit with README"
 ```
+###Step 2. Create a Remote Repository on GitHub
+(1) Log in to your GitHub account and navigate to the [Create a New Repository](https://github.com/new) page.
+
+(2) Fill in the details as follows:
+
+* **Repository Name:** <mark>rust-tutorial</mark>
+* **Description:** "Course notes organized as a static website using Material for MkDocs."
+* **Visibility:** Public
+
+(3) Do not initialize the repository with a README, .gitignore, or license.
+
+(4) Click **Create Repository**
+
+###Step 3. Link your Local Repository to GitHub
+
+(1) Add the GitHub repository as a remote:
+
+```bash
+git remote add origin https://github.com/<your-username>/rust-tutorial.git
+```
+Replace <mark>your-username</mark> with your GitHub username.
+
+(2) Check your default branch name with the subcommand <mark>git branch</mark>. If it's not <mark>main</mark>, rename it to main with the following command: <mark>git branch -M main.</mark> Old versions of <mark>git</mark> choose the name <mark>master</mark> for the primary branch, but these days <mark>main</mark> is the standard primary branch name.
+
+(3) Push your local commits to the GitHub repository:
+
+```bash
+git push --set-upstream origin main
+```
+!!! warning "Understanding the --set-upstream Flag"
+    * <mark>git push --set-upstream origin main:</mark> This command pushes the main branch to the remote repository origin. The <mark>--set-upstream</mark> flag sets up the main branch to track the remote branch, meaning future pushes and pulls can be done without specifying the branch name and just writing <mark>git push origin</mark> when working on your local main branch. This long flag has a corresponding <mark>-u</mark> short flag.
+
+(4) Back in your web browser, refresh your GitHub repository to see that the same commit you made locally has now been pushed to remote. You can use <mark>git log</mark> locally to see the commit ID and message which should match the ID of the most recent commit on GitHub. This is the result of pushing your changes to your remote repository.
 
 ##Part 2. Setting Up the Development Environment
 ###What is a Development (Dev) Container?
